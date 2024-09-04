@@ -1,8 +1,8 @@
-# DNA and Protein Sequence Analysis
+# DNA, Protein Sequence, and Player Data Analysis
 
 ## Introduction
 
-This project consists of several Python scripts designed to analyze DNA and protein sequences. The primary functions include finding Simple Sequence Repeats (SSRs) in DNA sequences and identifying and visualizing PROSITE patterns in protein sequences.
+This project includes Python scripts for analyzing DNA sequences, protein sequences, and player data. The main functionalities include finding Simple Sequence Repeats (SSRs) in DNA, identifying and visualizing PROSITE patterns in protein sequences, and performing various data operations on player datasets.
 
 ## Installation
 
@@ -11,6 +11,7 @@ This project consists of several Python scripts designed to analyze DNA and prot
 - Python 3.x
 - [Biopython](https://biopython.org/) (for handling biological sequences)
 - [Matplotlib](https://matplotlib.org/) (for data visualization)
+- [Pandas](https://pandas.pydata.org/) (for data manipulation and analysis)
 
 ### Installation Steps
 
@@ -18,12 +19,12 @@ This project consists of several Python scripts designed to analyze DNA and prot
 2. Install the required Python packages:
 
    ```bash
-   pip install biopython matplotlib
+   pip install biopython matplotlib pandas
    ```
 
 ## Usage
 
-### `exercise1_207385741.py`
+### `exercise1.py`
 
 This script provides a function to find Simple Sequence Repeats (SSRs) in a given DNA sequence.
 
@@ -32,7 +33,7 @@ This script provides a function to find Simple Sequence Repeats (SSRs) in a give
 1. Import the function `srr_find` from the script:
 
    ```python
-   from exercise1_207385741 import srr_find
+   from exercise1 import srr_find
    ```
 
 2. Pass a DNA sequence string to the `srr_find` function:
@@ -45,7 +46,7 @@ This script provides a function to find Simple Sequence Repeats (SSRs) in a give
 
 3. The function will return a list of SSRs and their counts.
 
-### `exercise2_207385741.py`
+### `exercise2.py`
 
 This script defines a `Cell` class that models a biological cell with a genome. It includes methods for finding SSRs within the genome.
 
@@ -72,7 +73,25 @@ This script defines a `Cell` class that models a biological cell with a genome. 
 
 4. The method will return a list of SSRs found at the specified index.
 
-### `exercise4_207385741.py`
+### `exercise3.py`
+
+This script defines a `myData` class that performs various data operations on player datasets, such as filtering by height, birth year, and specific columns.
+
+#### How to Use
+
+1. Import the `myData` class from the script:
+
+   ```python
+   from exercise3_207385741 import myData
+   ```
+
+2. Create an instance of the `myData` class by passing the path to a CSV file containing player data:
+
+   ```python
+   data = myData("path_to_your_data.csv")
+   ```
+
+### `exercise4.py`
 
 This script is designed to analyze protein sequences and identify PROSITE patterns. It also generates visualizations of the occurrence of these patterns in protein sequences.
 
@@ -89,6 +108,8 @@ This script is designed to analyze protein sequences and identify PROSITE patter
 
 ## Output
 
-- **`exercise1_207385741.py`**: Returns a list of SSRs found in the DNA sequence.
-- **`exercise2_207385741.py`**: Returns a list of SSRs found within the genome of the cell at the specified index.
-- **`exercise4_207385741.py`**: Generates a bar chart visualizing the occurrences of PROSITE patterns in protein sequences.
+- **`exercise1.py`**: Returns a list of SSRs found in the DNA sequence.
+- **`exercise2.py`**: Returns a list of SSRs found within the genome of the cell at the specified index.
+- **`exercise3.py`**: Provides various data analysis results, including player counts, filtered DataFrames, sorted lists, and statistical summaries.
+- **`exercise4.py`**: Generates a bar chart visualizing the occurrences of PROSITE patterns in protein sequences.
+
