@@ -86,43 +86,6 @@ This script is designed to analyze protein sequences and identify PROSITE patter
 
 2. The script will generate a bar chart showing the number of occurrences of different PROSITE patterns in the analyzed protein sequences.
 
-## Examples
-
-### Example for `exercise1_207385741.py`
-
-```python
-dna_seq = "AGATAGATAGATAGATAG"
-repeats = srr_find(dna_seq)
-print(repeats)
-```
-
-Output:
-
-```
-[('AGAT', 4)]
-```
-
-### Example for `exercise2_207385741.py`
-
-```python
-my_cell = Cell("Cell1", "AGATAGATAGATAGATAG", 1)
-repeats = my_cell.srr_find(0)
-print(repeats)
-```
-
-Output:
-
-```
-[('AGAT', 4)]
-```
-
-### Example for `exercise4_207385741.py`
-
-```bash
-python exercise4_207385741.py
-```
-
-Output: A bar chart showing the occurrence of various PROSITE patterns in the provided protein sequences.
 
 ## Output
 
